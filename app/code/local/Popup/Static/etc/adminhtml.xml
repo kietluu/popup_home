@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <menu>
+        <cms>
+            <children>
+                <popup_static_block translate="label" model="popup_static">
+                    <title>Popup Management</title>
+                    <action>adminhtml/block</action>
+                </popup_static_block>
+            </children>
+        </cms>
+    </menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <cms>
+                        <children>
+                            <popup_static_block>
+                                <title>Popup Static Block</title>
+                            </popup_static_block>
+                        </children>
+                    </cms>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

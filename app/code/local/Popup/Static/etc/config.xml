@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Popup_Static>
+            <version>0.1.0</version>
+        </Popup_Static>
+    </modules>
+    <global>
+        <models>
+            <popup_static>
+                <class>Popup_Static_Model</class>
+                <resourceModel>popup_static_resource</resourceModel>
+            </popup_static>
+            <popup_static_resource>
+                <class>Popup_Static_Model_Resource</class>
+                <entities>
+                    <block>
+                        <table>popup_static_block</table>
+                    </block>
+                </entities>
+            </popup_static_resource>
+        </models>
+        <blocks>
+            <popup_static>
+                <class>Popup_Static_Block</class>
+            </popup_static>
+        </blocks>
+        <helpers>
+            <popup_static>
+                <class>Popup_Static_Helper</class>
+            </popup_static>
+        </helpers>
+        <resources>
+            <popup_static_setup>
+                <setup>
+                    <module>Popup_Static</module>
+                </setup>
+            </popup_static_setup>
+        </resources>
+    </global>
+
+    <frontend>
+        <layout>
+            <updates>
+                <popup_static>
+                    <file>popup/frontend_popup_static.xml</file>
+                </popup_static>
+            </updates>
+        </layout>
+    </frontend>
+
+
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <popup_static before="Mage_Adminhtml">Popup_Static_Adminhtml</popup_static>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+
+    <adminhtml>
+        <layout>
+            <updates>
+                <popup_static>
+                    <file>popup/popup_static.xml</file>
+                </popup_static>
+            </updates>
+        </layout>
+    </adminhtml>
+</config>

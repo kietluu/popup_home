@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Popup_Static>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Popup_Static>
+    </modules>
+</config>
